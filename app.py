@@ -29,8 +29,10 @@ def extractTranscript(youtube_video_url):
         return transcript
     
     except Exception as e:
-        st.write("summery for this video is not available")
-        raise e
+        if len(youtube_video_url)==0:
+            st.write("Please Enter a valid youtube link")
+        else:
+            st.write("summery for this video is not available")
 
 #just bunch of streamlit page config
 st.set_page_config(page_title="AI Video Summerizer")
