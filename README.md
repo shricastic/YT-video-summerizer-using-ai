@@ -56,8 +56,3 @@ The application is deployed and accessible at [summerize-ai.streamlit](https://s
 
    ```bash
    streamlit run app.py
-
-
-
-
-
