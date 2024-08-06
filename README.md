@@ -56,3 +56,7 @@ The application is deployed and accessible at [summerize-ai.streamlit](https://s
 
    ```bash
    streamlit run app.py
+
+![Application Screenshot](https://github.com/shricastic/summerize-ai/blob/master/assets/Screenshot_20240806_200815.png)
+![Application Screenshot](https://github.com/shricastic/summerize-ai/blob/master/assets/Screenshot_20240806_200826.png)
+
