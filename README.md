@@ -18,7 +18,7 @@ This project is a Streamlit-based web application that summarizes YouTube video 
 
 ## Deployment
 
-The application is deployed and accessible at [summerize-ai.streamlit](https://summerize-ai.streamlit.app/).
+The application is deployed and accessible at [summerize-ai.streamlit](https://summerize-ai.streamlit.app/)
 
 ## Setup and Installation
 
