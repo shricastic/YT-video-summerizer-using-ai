@@ -4,7 +4,6 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 import google.generativeai as genai
-
 from youtube_transcript_api import YouTubeTranscriptApi
 
 genai.configure(api_key=os.getenv("Google_Api_Key"))
@@ -58,11 +57,12 @@ if youtube_link:
     st.image(f"http://img.youtube.com/vi/{video_id}/0.jpg", use_column_width = True)
 
 if st.button("Get Detailed Notes"):
-    transcript_text = extractTranscript(youtube_link)
+    with st.spinner("Please wait your summery/notes are being generated"):
+        transcript_text = extractTranscript(youtube_link)
 
-    if transcript_text:
-        summery = generate_gemini_content(transcript_text, promt)
-        st.markdown("## Detailed Summery:")
-        st.write(summery)
-    else:
-        summery = "summery not available at this time"
+        if transcript_text:
+            summery = generate_gemini_content(transcript_text, promt)
+            st.markdown("## Detailed Summery:")
+            st.write(summery)
+        else:
+            summery = "summery not available at this time"
